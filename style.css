@@ -8,6 +8,15 @@ p {
   color: #2d1800;
 }
 
+
+body {
+  background-color: #f9b880;
+  padding: 0;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 .content {
   margin: 0 20% 0 20%;
   padding: 50px 0 50px 0;
@@ -17,6 +26,7 @@ p {
 .main-menu {
   background-color: #E59F71;
   margin: 0 auto;
+  padding: 0;
   width: 100%;
   z-index: 999;
 }
@@ -28,9 +38,8 @@ nav ul {
 
 nav li {
   display: inline-block;
-  padding: 10px 20px 0 20px;
+  padding: 10px 23px 0 23px;
   margin: 0 auto;
-
 }
 
 nav img {
@@ -39,7 +48,6 @@ nav img {
 
 nav.main-menu {
   position: fixed;
-
 }
 
 nav a {
@@ -58,31 +66,21 @@ a:hover span {
   margin-bottom: 5px;
 }
 
-/*nav:hover li a img {
-  height: 30px;
-}*/
-
-body {
-  background-color: #f9b880;
-  padding: 0;
-  margin: 0 auto;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
 /* Header */
 .header {
+  margin: 0 auto;
+  padding: 0;
+}
+.container {
   background-color: #f9b880;
   padding: 100px 0 0 0;
   margin: 0 20% 45px 20%;
   text-align: center;
-
 }
 
 .header img {
   width: 100%;
   align-items: center;
-  /*margin: 0 0 -50px 0;*/
   margin: 0 auto;
 }
 
@@ -114,6 +112,8 @@ body {
   background-color: #FFDCB5;
   align-items: center;
   text-align: center;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .fun h1 {
@@ -182,6 +182,8 @@ body {
 /* Our Program */
 .our-program {
   background-color: #FFDCB5;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .description {
@@ -204,11 +206,20 @@ body {
 /* Sign Up */
 .sign-up {
   background-color: #FFDCB5;
-
+  padding: 0;
+  margin: 0 auto;
 }
 
 .sign-up ul {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sign-up button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
 }
 
 .sign-up button {
@@ -236,6 +247,8 @@ body {
 .contact-us {
   background-color: #FFDCB5;
   color: #2d1800;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .contact-us a {
@@ -349,6 +362,10 @@ footer h2 {
   color: #2d1800;
 }
 
+.fa:hover {
+  color: white;
+}
+
 .icons {
   margin: 0 auto;  
   text-align: center;
@@ -358,8 +375,10 @@ footer h2 {
 
 .icons li {
   display:  inline-block;
-
+  margin: 0 auto;
 }
+
+
 
 #mc_embed_signup {
   color: #FFF5EA;
@@ -386,6 +405,14 @@ footer h2 {
 }
 
 #mc_embed_signup .button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+#mc_embed_signup .button {
   background: #ace8ef;
   color: white;
   padding: 10px;
@@ -405,7 +432,8 @@ footer h2 {
   background-color: #ace8ef;
   text-align: center;
   font-size: 11px;
-  margin-bottom: -25px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 @media only screen and (max-width: 1220px) {
@@ -439,7 +467,7 @@ footer h2 {
     padding: 35px 0 35px 0;
   }
 
-  .header {
+  .container {
     margin: 0 15% 45px 15%;
   }
 
@@ -493,29 +521,28 @@ footer h2 {
     font-size: 13px;
   }
 
-  .content {
+  .content, form {
     margin: 0 25px 0 25px;
   }
 
-  .header {
+  .container {
     margin: 0 10px 45px 10px;
-    text-align: center;
-
   }
 
   .header p {
     font-size: 20px;
   }
 
-  .icons {
-    margin: -15px;
+  .icons li, .contact-icons li {
+    margin: 0 -15px 0 -15px;
   }
 
   form {
-    margin-right: 25px;
+    margin: 0 20px 0 0;
   }
 
 } 
+
 
 @media only screen and (max-width: 500px) {
   nav img {
@@ -530,23 +557,20 @@ footer h2 {
     font-size: 13px;
   }
 
-  .contact-icons {
+  .contact-icons li{
     margin: 0 -15px 0 -15px;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .header {
-    margin: 0 10px 45px 10px;
-  }
 
   nav img {
     height: 30px;
-    margin: 0 10px;
+    margin: 0 auto;
   }
 
   nav li {
-    padding: 10px 20px 0 20px;
+    padding: 10px 8px 0 8px;
   }
 
   a:hover span {
@@ -556,7 +580,6 @@ footer h2 {
   .content {
     margin: 0 10px 0 10px;
   }
-
 
   .header h1 {
     font-size: 35px;
@@ -575,31 +598,32 @@ footer h2 {
     padding: 7px;
   }
 
-  .icons {
-    margin: -25px;
+  .icons li, .contact-icons li {
+    margin: 0 -15px 0 -15px;
   }
 
-  .contact-icons {
-    margin: 0 -30px 0 -30px;
+  form {
+    margin: 0 25px 0 0;
   }
+
 } 
 
 
 @media only screen and (max-width: 350px){
 
   nav img {
-    height: 30px;
+    height: 25px;
   }
 
   nav li {
-    padding: 10px 13px 0 13px;
+    padding: 10px 8px 0 8px;
   }
 
   a:hover span {
     font-size: 11px;
   }
 
-  .header {
+  .container {
     margin: 0 5px 45px 5px;
   }
 
@@ -607,15 +631,18 @@ footer h2 {
     width: 60%;
   }
   
-
   .contact img {
-    width: 28px;
+    width: 300px;
     padding: 5px;
   }
 
-  .icons {
-    margin: -30px;
+  .icons li, .contact-icons li {
+    margin: 0 -17px 0 -17px;
     }
+
+  form {
+    margin: 0 25px 0 0;
+  }
 }
 
 
@@ -839,7 +866,7 @@ footer h2 {
 @media (max-width: 700px) and (min-width: 480px) {
   .col[class*="col-m-"] {
     display: inline-block;
-    margin-right: -.24em; }
+    margin-right: 0px; }
 
   .col.col-m-1-of-2, .col.col-m-2-of-4 {
     width: 50%; }
@@ -858,7 +885,7 @@ footer h2 {
 @media (max-width: 480px) {
   .col[class*="col-s-"] {
     display: inline-block;
-    margin-right: -.24em; }
+    margin-right: 0px; }
 
   .col.col-s-1-of-2, .col.col-s-2-of-4 {
     width: 50%; }

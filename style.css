@@ -327,6 +327,14 @@ form {
 }
 
 .contact-form input[type="submit"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.contact-form input[type="submit"]{
   background: #ace8ef;
   width: 100px;
   color: white;

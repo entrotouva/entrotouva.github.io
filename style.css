@@ -186,6 +186,11 @@ a:hover span {
   padding: 0;
 }
 
+.our-program a {
+  text-decoration: underline;
+  color: #2d1800;
+}
+
 .description {
   margin: -20px 0 20px 0;
 }
@@ -212,6 +217,11 @@ a:hover span {
 
 .sign-up ul {
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sign-up a {
+  text-decoration: underline;
+  color: #2d1800;
 }
 
 .sign-up button {
@@ -394,8 +404,6 @@ footer h2 {
 .icons li a {
   text-decoration: none;
 }
-
-
 
 #mc_embed_signup {
   color: #FFF5EA;
